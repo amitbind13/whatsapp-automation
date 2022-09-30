@@ -12,6 +12,9 @@ jobs:
           auth_token: ${{ secrets.auth_token }}
           to_whatsapp_no: ${{ secrets.to_whatsapp_no }}
 
-
-        uses: khaled-ibtikar/whatsapp-push-notify-action@master
-    
+      - name: generate message
+      - uses: khaled-ibtikar/whatsapp-push-notify-action@master
+        id: gen
+        env:
+          message: "Hi Admin"
+#Code Completed Done.
